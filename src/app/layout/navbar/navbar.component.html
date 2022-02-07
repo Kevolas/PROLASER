@@ -1,0 +1,84 @@
+<mat-sidenav-container>
+    <mat-sidenav  class="example-container" #sidenav mode="over" opened="false" fxHide.gt-sm="true" fixedInViewport="true">
+    <div fxLayout="column">
+        <button mat-button (click)="sidenav.close()" class="sidebtn1">
+            <mat-icon>clear</mat-icon>
+        </button>
+        <button mat-button class="sidebtn" routerLink="Nosotros" (click)="sidenav.close()" > 
+            <span class="button-text">Nosotros</span>
+        </button>
+        <button mat-button class="sidebtn">
+            <span class="button-text">Certificaciones</span>
+        </button>
+        <button mat-button class="sidebtn">
+            <span class="button-text">Procesos</span>
+        </button>
+        <button mat-button class="sidebtn">
+            <span class="button-text">Productos</span>
+        </button>
+        <button mat-button class="sidebtn" >
+            <span class="button-text">Contacto</span>
+        </button>
+        <div class="logosidenav1">
+            <img class="logosidenav" src="assets/logoside.png" alt="">
+        </div>
+        <button mat-button class="sidebtn2" routerLink="Login" (click)="sidenav.close()">
+            <span class="button-text-red">Login</span>
+            <mat-icon class="lock">lock</mat-icon>
+        </button>
+        <button mat-button class="sidebtn2">
+            <span class="button-text">US</span>
+            <mat-icon >keyboard_arrow_down</mat-icon>
+        </button>
+    </div>
+    </mat-sidenav>
+    
+    <mat-sidenav-content fxFlexFill>
+        <div class="content">
+            <mat-toolbar>
+                <div fxShow="true" fxHide.gt-sm="true">
+                <button mat-icon-button (click)="sidenav.open()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+                </div>
+                
+                <img class = "logo" src="assets/logo.png" alt="">
+        
+                <span class="example-spacer"></span>
+                <div fxShow="true" fxHide.lt-md="true">
+                    
+                    <button mat-button routerLink="Nosotros">
+                        <span class="button-text">Nosotros</span>
+                    </button>
+                    <button mat-button>
+                        <span class="button-text">Certificaciones</span>
+                    </button>
+                    <button mat-button>
+                        <span class="button-text">Procesos</span>
+                    </button>
+                    <button mat-button>
+                        <span class="button-text">Productos</span>
+                    </button>
+                    <button mat-button>
+                        <span class="button-text">Contacto</span>
+                    </button>
+                    <button mat-button routerLink="Login">
+                        <span class="button-text-red">Login</span>
+                        <mat-icon class="lock">lock</mat-icon>
+                    </button>
+                    <button mat-button>
+                        <span class="button-text">US</span>
+                        <mat-icon >keyboard_arrow_down</mat-icon>
+                    </button>
+                </div>
+            
+            </mat-toolbar>
+            
+        </div>
+    </mat-sidenav-content>
+
+</mat-sidenav-container>
+
+
+
+
