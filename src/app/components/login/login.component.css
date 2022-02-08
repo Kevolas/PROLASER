@@ -1,6 +1,19 @@
+.fondo{
+    background-image: url(/assets/background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .contenido{
     display: flex;
     padding: 60px;
+
 }
 
 .titulo{
@@ -174,16 +187,26 @@
 
 @media(max-width:700px){
 
+
+    .fondo{
+        background-position: 45%;
+    }
+
     .contenido{
         display: flex;
         flex-direction: column;
         margin: auto;
         padding: 20px;
+    
     }
 
     .form-container{
-        padding: 20px;
-        margin-top: 30px;
+        padding: 10px;
+        position: absolute;
+        height: 236px;
+        left: 0px;
+        right: 0px;
+        top: 300px;
     }
 
     .titulo{
@@ -207,7 +230,11 @@
         font-size: 20px;
         line-height: 60px;
         text-align: center;
-        margin-top: 50px;
+        position: absolute;
+        height: 17px;
+        left: 28px;
+        right: 28px;
+        top: 25px;
     }
 
    

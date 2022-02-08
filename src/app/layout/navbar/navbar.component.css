@@ -64,7 +64,6 @@ button{
 
   .mat-sidenav-content{
       font-size: 200%;
-      background-image: url(/assets/background3.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
@@ -97,13 +96,20 @@ button{
     margin-top: 20px;
   }
 
- 
+  .example-container{
+      min-height: 90vh;
+  }
+  
+  .footerside{
+    bottom: 0;
+	margin-top: auto;
+  }
 
   @media(max-width:868px){
     .logo{
         width: 210px;
         position: absolute;
-        top: 0;
+        top: 5px;
         bottom: 0;
         left: 0;
         right: 0;
@@ -120,24 +126,34 @@ button{
 
 
     .logosidenav{
-        width: 500px;
-        height: 500px;
+        width: 400px;
+        height: 400px;
         position: relative;
-        right:80px;
+        right: 80px;
+        bottom: -100px;
     }
     
     .sidebtn2{
-        bottom: 300px;
+        bottom: 0px;
         z-index: 1;
         margin-top: 10px;
+        bottom: -500px;
     }
+
+    .footerside{
+        bottom: 0;
+        margin-top: auto;
+      }
   }
+
+
+ 
 
   @media(max-width:700px){
     .logo{
-        width: 210px;
+        width: 190px;
         position: absolute;
-        top: 0;
+        top: 5px;
         bottom: 0;
         left: 0;
         right: 0;
@@ -153,7 +169,7 @@ button{
     }
     
     .sidebtn2{
-        bottom: 120px;
+        bottom: -200px;
         z-index: 1;
         margin-top: 10px;
     }
@@ -163,6 +179,7 @@ button{
         height: 250px;
         position: relative;
         right:40px;
+        bottom: 20px;
     }
 
   }

@@ -17,10 +17,9 @@ ul{
 
 .footer{
 	background-color: #3A3C3A;
-    margin-top: 220px;
     padding: 50px 0;
 	bottom: 0;
-	
+	margin-top: auto;
 }
 
 .footer-col{
@@ -124,13 +123,13 @@ ul{
 
  @media(max-width:1980px){
     .footer{
-		margin-top: 250px;
+		
 	}
 }
 
  @media(max-width:1440px){
     .footer{
-		margin-top: 220px;
+		
 	}
 }
 
@@ -141,7 +140,7 @@ ul{
   }
 
   .footer{
-	margin-top: 320px;
+	
 	}
 }
 
@@ -165,7 +164,7 @@ ul{
 	}
 
 	.footer{
-		margin-top: 360px;
+		
 		}
   
 }
@@ -194,6 +193,6 @@ ul{
 	}
 
 	.footer{
-		margin-top: 180px;
+		
 		}
 }
